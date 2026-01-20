@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    padding: 9em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    animation: bodybackground 5s ease-in-out infinite alternate;
+}
+
+main {
+    border: 0.3em #E8DBCB solid;
+    background-color: rgb(34, 11, 14);
+}
+
+@keyframes bodybackground {
+    from {background-color: #3f2b33;}
+    to {background-color: #56444b;}
+}
+
+header {
+    background-image: url(images/header2.jpg);
+    background-size: cover;
+    height: 19em;
+    padding: 1em;
+    padding-top: 4em;
+    position: relative;
+}
+
+header img {
+    height: 200px;
+    width: 200px;
+    position: relative; 
+}
+
+h1 {
+    font-family: "Leckerli One", cursive;
+    font-size: 6em;
+    color: #E8DBCB;
+}
+
+article {
+    font-family: "Just Another Hand", cursive;
+    font-size: 2.7em;
+    color: #E8DBCB;
+    text-align: left;
+    padding-top: 2em;
+    padding-left: 4em;
+    padding-right: 7em;
+    line-height: 1.2em;
+}
+
+article a {
+    font-family: "Just Another Hand", cursive;
+    
+}
+
+article time {
+    color:#EBADC2;
+    font-family: "Fira Mono", monospace; 
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+footer {
+    font-family: "Fira Mono", monospace;
+    font-size: 1em;
+    padding:2em;
+}
+
+footer p {
+    color: #E8DBCB;
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #9A0034;
+}
+
+footer a {
+    color: #EBADC2;
+}
+ 
+a {
+    
+    text-align: right;
+    color: #EBADC2;
+    text-decoration: none;
+    font-family: "Fira Mono", monospace;
+    font-size: 1em;
+}
+
+a:hover {
+    color: #9A0034;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 7em;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+li a {
+    padding: 0.8em;
+    background-color: #E8DBCB;
+    border-radius: 1em;
+    color:#9A0034;
+}
+
+li a:hover {
+    background-color: #9A0034;
+    color:#E8DBCB;
+}
