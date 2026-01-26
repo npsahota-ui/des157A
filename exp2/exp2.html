@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experiment 2</title>
+</head>
+<body>
+    <h1>experiment 2</h1>
+
+    <h2 class="apple">apples!</h2>
+    <h2 class="banana">bananas!</h2>
+    <h2 class="mango">mangoes!</h2>
+    <h2 class="grape">grapes!</h2>
+
+    <script>
+
+        //my program asks the user to choose a fruit. Once they choose, the page will load with the name of the fruit along with it's corresponding color. 
+
+        var fruit = prompt ('choose one: apple, banana, mango, or grape', '' );
+        fruit = fruit.toLowerCase();
+
+        if (fruit == 'apple') {
+            document.querySelector('.apple').style.color = "red";            
+            console.log('apples are so yummy!');
+        }
+
+        else if (fruit == 'banana') {
+            document.querySelector('.banana').style.color = "yellow"; 
+            console.log('bananas are so yummy!');
+        }
+
+        else if (fruit == 'mango') {
+            document.querySelector('.mango').style.color = "orange";
+            console.log('mangoes are so yummy!');
+        }
+
+        else if (fruit == 'grape') {
+            document.querySelector('.grape').style.color = "purple";
+            console.log('grapes are so yummy!');
+        }
+        
+        else {
+            console.log("you didn't choose one of those fruits!")
+        }
+
+    </script>
+</body>
+</html>
