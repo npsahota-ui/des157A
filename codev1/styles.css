@@ -1,0 +1,18 @@
+header {
+    padding: 4em;
+}
+
+h1 {
+    font-family: "Croissant One", serif;
+    text-align: center;
+}
+
+#questions {
+    display: block;
+    padding: 3em;
+}
+form input, form label {
+    display: block;
+    font-family: "Gamja Flower", sans-serif;
+}
+
