@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Gamja+Flower&display=swap" rel="stylesheet">
 
-    <link href="styles.css" rel="stylesheet"
-
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -20,48 +20,55 @@
     <h1>Letter to a Loved One</h1>
 </header>
 
-<div id="questionsdiv">
-<section>
-    <img src="images/bear1.PNG" alt="drawing of brown bear holding a letter" height="600" width="600">
-</section>
-
-<section id="questions">
-    <h2>I want to know...</h2>
-    <form>
-        <label for="lovedone"></label>1. Name of a loved one</label>
-        <input type="text" name="lovedone" id="lovedone" required>
-
-        <label for="describe">2. An adjective</label>
-        <input type="text" name="describe" id="describe" required>
-
-        <label for="activity">3. An activity you like to do together</label>
-        <input type="text" name="activity" id="activity" required>
-
-        <label for="favorite">4. Your favorite food</label>
-        <input type="text" name="favorite" id="favorite" required>
-
-        <label for="relationship">5.Their relationship to you. ex: friend, parent, etc</label>
-        <input type="text" name="relationship" id="relationship" required>
-
-        <label for="feelings">6. A feeling</label>
-        <input type="text" name="feelings" id="feelings" required>
-
-        <label for="name">7. Your name</label>
-        <input type="text" name="name" id="name" required>
-
-        <button type="submit">send letter!</button>
-    </form>
-</section>
-</div>
-
-<div id="answersdiv">
-<section id="answers">
-    <p>dear...</p>
+<main>
+    <div id="questionsdiv">
     <section>
-        <img src="images/bear2.PNG" alt="drawing of brown bear holding a letter" height="600" width="600">
+        <img src="images/bear1.PNG" alt="drawing of brown bear holding a letter" height="600" width="600">
     </section>
-</section>
-</div>
+
+    <section id="questions">
+        <h2>I want to know...</h2>
+        <form>
+            <label for="lovedone"></label>1. Name of a loved one</label>
+            <input type="text" id="lovedone">
+
+            <label for="describe">2. An adjective</label>
+            <input type="text" id="describe">
+
+            <label for="activity">3. An activity you like to do together</label>
+            <input type="text" id="activity">
+
+            <label for="favorite">4. Your favorite food</label>
+            <input type="text" id="favorite">
+
+            <label for="relationship">5.Their relationship to you. ex: friend, parent, etc</label>
+            <input type="text" id="relationship">
+
+            <label for="feelings">6. A feeling</label>
+            <input type="text" id="feelings">
+
+            <label for="name">7. Your name</label>
+            <input type="text" id="name">
+
+            <button type="submit">send letter!</button>
+        </form>
+
+        <div id="error"></div>
+    </section>
+
+    <section id="overlay">
+        <article>
+            <div id="madlib">
+                <p class="answersp">Dear <span>${lovedone}</span>,</p>
+                <p class="answersp">I think you are the most <span>${describe}</span>,</p> person ever! I love it when we <span>${activity}</span>,</p> together. To me, you are more special than <span>${favorite}</span>,</p>, and I REALLY love <span>${favorite}</span>,</p>. You are the best <span>${relationship}</span>,</p> ever, and you make me feel so <span>${feelings}</span>,</p></p>
+                <p class="answersp">Love, <span>${name}</span>,</p></p>
+
+                <img src="images/bear2.PNG" alt="drawing of white bear holding a letter" height="200" width="200">
+            </div>
+            <p><a href="#" id="close">Close</a></p>
+        </article> 
+    </section>
+</main>
 
 <footer>
         <p>Designed by Nisha Sahota</p>
