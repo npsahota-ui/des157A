@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>madlibs code v1</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Gamja+Flower&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Letter to a Loved One</h1>
+</header>
+
+<main>
+    <div id="questionsdiv">
+    <section>
+        <img src="images/bear1.PNG" alt="drawing of brown bear holding a letter" height="600" width="600">
+    </section>
+
+    <section id="questions">
+        <h2>I want to know...</h2>
+        <form>
+            <label for="lovedone"></label>1. Name of a loved one</label>
+            <input type="text" id="lovedone">
+
+            <label for="describe">2. An adjective</label>
+            <input type="text" id="describe">
+
+            <label for="activity">3. An activity you like to do together</label>
+            <input type="text" id="activity">
+
+            <label for="favorite">4. Your favorite food</label>
+            <input type="text" id="favorite">
+
+            <label for="relationship">5.Their relationship to you. ex: friend, parent, etc</label>
+            <input type="text" id="relationship">
+
+            <label for="feelings">6. A feeling</label>
+            <input type="text" id="feelings">
+
+            <label for="name">7. Your name</label>
+            <input type="text" id="name">
+
+            <button type="submit">send letter!</button>
+        </form>
+
+        <div id="error"></div>
+    </section>
+
+    <section id="overlay">
+        <article>
+            <div id="madlib">
+                <p class="answersp">Dear <span>${lovedone}</span>,</p>
+                <p class="answersp">I think you are the most <span>${describe}</span>person ever! I love it when we <span>${activity}</span> together. To me, you are more special than <span>${favorite}</span>, and I REALLY love <span>${favorite}</span>. You are the best <span>${relationship}</span> ever, and you make me feel so <span>${feelings}</span></p></p>
+                < class="answersp">Love, <span>${name}</span></p>
+
+                <img src="images/bear2.PNG" alt="drawing of white bear holding a letter" height="200" width="200">
+            </div>
+            <p><a href="#" id="close">Close</a></p>
+        </article> 
+    </section>
+</main>
+
+<footer>
+        <p>Designed by Nisha Sahota</p>
+        <a href="mailto:&#110;&#112;&#115;&#097;&#104;&#111;&#116;&#097;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email Me</a>
+</footer>
+
+</body>
+</html>
