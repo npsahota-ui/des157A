@@ -113,6 +113,10 @@ footer a:hover {
         align-items: center;
     }
 
+    header {
+        height: 25em;
+    }
+
     h1 {
         font-size: 4em;
     }

@@ -2,9 +2,8 @@ body {
     background-color: rgb(171, 202, 242);
 }
 
-header {
-    padding: 2em;
-    padding-top: 1em;
+header { 
+    text-align: center;
 }
 
 h1 {
@@ -24,10 +23,10 @@ h1 {
 
 #overlay {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -46,7 +45,7 @@ h1 {
 
 h2{
     font-family: "Gamja Flower", sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 form {
@@ -56,6 +55,10 @@ form {
 form input, form label {
     display: block;
     font-family: "Gamja Flower", sans-serif;
+}
+
+form label {
+    padding-top: 1em;
 }
 
 #questionsdiv {
@@ -71,11 +74,43 @@ footer {
 
 button {
     font-family: "Gamja Flower", sans-serif;
+    background-color: pink;
+    border-radius: 5px;
+    margin-top: 1.3em;
 }
 
 .answersp {
     font-family: "Gamja Flower", sans-serif;
     font-size: 2em;
     padding: 1em;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgb(74, 4, 4);
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#close:hover {
+    color: pink;
+}
+
+#madlib img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+footer a {
+    color: rgb(74, 4, 4);
+}
+
+footer a:hover {
+    color: pink;
 }
 

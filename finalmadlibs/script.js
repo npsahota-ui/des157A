@@ -52,10 +52,10 @@
         } else {
             myText = `<p class="answersp">Dear <span>${lovedone}</span>,</p>
                 
-                <p class="answersp">I think you are the most <span>${describe}</span>person ever! I love it when we <span>${activity}</span> together. To me, you are more special than <span>${favorite}</span>, and I REALLY love <span>${favorite}</span>. You are the best <span>${relationship}</span> ever, and you make me feel so <span>${feelings}</span></p></p>
+                <p class="answersp">I think you are the most <span>${describe}</span> person ever! I love it when we <span>${activity}</span> together. To me, you are more special than <span>${favorite}</span>, and I REALLY love <span>${favorite}</span>. You are the best <span>${relationship}</span> ever, and you make me feel so <span>${feelings}</span></p></p>
                 <p class="answersp">Love, <span>${name}</span></p>
 
-                <img src="images/bear2.PNG" alt="drawing of white bear holding a letter" height="200" width="200">`
+                <img src="images/bear2.PNG" alt="drawing of white bear holding a letter" height="300" width="300">`
 
                 document.querySelector('#lovedone').value = '';
                 document.querySelector('#describe').value = '';
