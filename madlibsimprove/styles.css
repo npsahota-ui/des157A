@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(180deg, #ABCAF2 0%, #FCE1F6 100%);
+}
+
+header { 
+    text-align: center;
+}
+
+h1 {
+    font-family: "Croissant One", serif;
+    text-align: center;
+    font-size: 3.5em;
+    color: rgb(83, 110, 174);
+}
+
+#questions {
+    display: block;
+    padding: 3em;
+    background-image: url(images/paper.JPG);
+    background-size: cover;
+    position: relative;   
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#overlay article {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(images/paper.JPG);
+    background-size: cover;
+    width: 60%;
+    height: 70vh;
+    padding: 40px;
+}
+
+h2{
+    font-family: "Petit Formal Script", cursive;
+    font-size: 1.3em;
+    color: rgb(83, 110, 174);
+    padding-bottom: 1em;
+}
+
+form {
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 18px;
+}
+
+form input, form label {
+    display: block;
+    font-family: "Gamja Flower", sans-serif;
+}
+
+form input {
+    border-radius: 9px;
+    border: 2px solid rgb(171, 202, 242);
+}
+
+form label {
+    padding-top: 1em;
+}
+
+#questionsdiv {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    padding: 4em;
+    font-family: "Gamja Flower", sans-serif;
+}
+
+button {
+    font-family: "Gamja Flower", sans-serif;
+    background-color: pink;
+    border-radius: 15px;
+    margin-top: 1.3em;
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.answersp {
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 2em;
+    padding: 1em;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgb(83, 110, 174);;
+    font-family: "Gamja Flower", sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#close:hover {
+    color: pink;
+}
+
+#madlib img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+footer a {
+    color: rgb(83, 110, 174);;
+}
+
+footer a:hover {
+    color: white;
+}
+
