@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(180deg, #D4BDE3 0%, #13124E 100%);
+}
+
+h1{
+    text-align: center;
+    font-size: 5.5em;
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:  #13124E;
+}
+
+h2 {
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.sectionscore {
+    display: flex;
+    justify-content: center;
+    gap: 65em;
+}
+
+.sectionimage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionbutton {
+    display: flex;
+    padding-bottom: 4em;
+    justify-content: center;
+    gap: 15em;
+}
+
+button {
+    font-size: 1.5em;
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: pink;
+    border-radius: 5px;
+    padding: 1em;
+    border-radius: 15px;
+}
