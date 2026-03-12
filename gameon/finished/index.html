@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Queen's Quarrel</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
@@ -20,24 +20,31 @@
         <p>In this game, two queens are fighting for power. The first queen to get to 30 wins. If she gets two ace's, her score is zeroed out. If the Queen card appears, she gets 10 points.</p>
     </header>
 
-    <secton class="sectionscore">
-        <h2>queen 1:</h2>
-        <h2>queen 2:</h2>
-    </secton>
-
-    <section class="sectionimage">
-        <img src="images/queen2img.png" alt="drawing of a second imaginary indian queen" height="480" width="380">
-        <!-- <img src="images/heart2.jpg" alt="image of 2 of hearts card" height="170" width="100">
-        <img src="images/spade4.jpg" alt="image of 4 of spades card" height="170" width="100"> -->
-        <img src="images/queen1img.png" alt="drawing of an imaginary indian queen" height="450" width="350">
+    <section class="sectionscore">
+        <h2 id="queen1score">Queen 1: 0</h2>
+        <h2 id="queen2score">Queen 2: 0</h2>
     </section>
 
     <div id="gamecontrol">
-        <button id="startgame">start</button>
+        <button id="startgame">Start</button>
     </div>
 
-    <div id="game"></div>
-	<div id="actions"></div>
-	<div id="score"></div>
+    <section class="game-area">
+        <div class="queen-container">
+            <img src="images/queen2img.png" alt="drawing of a second imaginary indian queen" height="480" width="380">
+        </div>
+
+        <div class="center-game">
+            <div id="game"></div>
+            <div id="actions"></div>
+            <div id="quit-container"></div>
+        </div>
+
+        <div class="queen-container">
+            <img src="images/queen1img.png" alt="drawing of an imaginary indian queen" height="450" width="350">
+        </div>
+    </section>
+
+    <div id="score"></div>
 </body>
 </html>

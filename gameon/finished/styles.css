@@ -1,0 +1,154 @@
+body {
+    background: linear-gradient(180deg, #D4BDE3 0%, #13124E 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+p {
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+    color: #13124E;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5.5em;
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #13124E;
+    margin: 0.5em 0 0.2em 0;
+}
+
+h2 {
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: #13124E;
+}
+
+.sectionscore {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15em;
+    margin-bottom: 2em;
+}
+
+#gamecontrol {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+/* Main game area with three columns */
+.game-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    padding: 0 2em;
+}
+
+.queen-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center column for cards and buttons */
+.center-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    min-width: 400px;
+}
+
+/* Game display area (cards and messages) */
+#game {
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#game p {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#game img {
+    margin: 0 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+/* Actions area (Pick, Pick Again, Pass buttons) */
+#actions {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+/* Quit button container */
+#quit-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* All buttons styled the same */
+button {
+    font-size: 1.5em;
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: pink;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ffb3d9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Score display at bottom */
+#score {
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+#score p {
+    font-size: 1.4em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#score h2 {
+    font-size: 3em;
+    color: #FFD700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}

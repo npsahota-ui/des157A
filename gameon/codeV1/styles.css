@@ -1,6 +1,15 @@
 body {
     background: linear-gradient(180deg, #D4BDE3 0%, #13124E 100%);
 }
+p {
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+}
 
 h1{
     text-align: center;
@@ -29,14 +38,14 @@ h2 {
     justify-content: space-between;
 }
 
-.sectionbutton {
+#gamecontrol {
     display: flex;
     padding-bottom: 4em;
     justify-content: center;
     gap: 15em;
 }
 
-button {
+#startgame {
     font-size: 1.5em;
     font-family: "Elsie Swash Caps", serif;
     font-weight: 400;
